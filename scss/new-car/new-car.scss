@@ -1,0 +1,221 @@
+@import "../helpers/yama-padding";
+@import "../news-links/news-links";
+@import "../button/button";
+
+header nav > a,
+header nav .logo_box,
+footer {
+  @include yama-padding-s;
+}
+.banner {
+  height: 100vh;
+  .mask {
+    background: transparent linear-gradient(180deg, #00000000 53%, #000 96%) 0%
+      0% no-repeat padding-box;
+    align-items: flex-end;
+    justify-content: flex-start;
+    @include yama-padding-s;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .content {
+      text-align: left;
+      .subtitle {
+        color: var(--first);
+        letter-spacing: 4px;
+        font-weight: 700;
+        margin-top: 0;
+        font-size: 1.2rem;
+        margin-bottom: 0;
+      }
+      .title {
+        font-size: 4.8rem;
+        font-weight: 100;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        @media (max-width: 400px) {
+          font-size: 14vw;
+        }
+      }
+      .buttons-container {
+        display: flex;
+
+        @media (max-width: 992px) {
+          flex-direction: column;
+          .button {
+            margin-right: 0 !important;
+            margin-bottom: 1rem;
+          }
+        }
+        a,
+        button {
+          @media (max-width: 400px) {
+            width: 100%;
+          }
+        }
+        .button {
+          font-size: 1.1rem;
+          margin-right: 2rem;
+          padding: 1rem 4rem;
+          @media (max-width: 400px) {
+            padding-right: 0;
+            padding-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+section.new-car {
+  .section-subtitle {
+    color: var(--first);
+    letter-spacing: 4px;
+    font-size: 1.4rem;
+    margin-bottom: 0;
+  }
+  .section-title {
+    font-weight: 100;
+    font-size: 3.8rem;
+    margin-top: 0;
+    color: #343434;
+    @media (max-width: 400px) {
+      font-size: 15vw;
+    }
+  }
+  .design {
+    @include yama-padding-s;
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    .content,
+    .photo-column {
+      width: 50%;
+      @media (max-width: 992px) {
+        width: 100%;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    &.bg {
+      padding-top: 5rem;
+      padding-bottom: 30rem;
+      position: relative;
+      &::before,
+      &::after {
+        content: "";
+        background-image: linear-gradient(
+          180deg,
+          #ffffff 0%,
+          rgba(0, 0, 0, 0) 60%
+        );
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 143px;
+        z-index: 1;
+      }
+      &::after {
+        transform: rotate(-180deg);
+        bottom: 0;
+        top: unset;
+      }
+      .description,
+      .section-title {
+        color: white;
+      }
+      .description {
+        text-shadow: 0 0 10px black;
+      }
+    }
+    .description {
+      font-weight: 100;
+      color: #343434;
+      font-size: 1.5rem;
+    }
+  }
+
+  .attributes {
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      @media (max-width: 992px) {
+        margin-bottom: 4rem;
+      }
+      .column {
+        width: 50%;
+        @media (max-width: 992px) {
+          width: 100%;
+        }
+        &:nth-child(2n) {
+          padding: 5rem;
+          @media (max-width: 576px) {
+            padding: 1rem;
+          }
+        }
+        .subtitle {
+          color: var(--first);
+          margin-top: 0;
+          margin-bottom: 0rem;
+          font-weight: 500;
+          font-size: 1rem;
+          letter-spacing: 3px;
+        }
+        .title {
+          font-weight: 900;
+          color: #343434;
+          font-size: 3rem;
+          margin-top: 0;
+          margin-bottom: 1.5rem;
+          @media (max-width: 400px) {
+            font-size: 8vw;
+          }
+        }
+        .description {
+          font-weight: 100;
+          line-height: 30px;
+          margin-bottom: 2rem;
+        }
+        .button {
+          font-size: 1.1rem;
+        }
+        .photo {
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          width: 100%;
+          height: 100%;
+          @media (max-width: 992px) {
+            height: 400px;
+          }
+        }
+      }
+      &:nth-child(2n) {
+        .column {
+          @media (min-width: 992px) {
+            &:first-child {
+              order: 2;
+            }
+            &:last-child {
+              order: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include news-links;
+  .links {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    @include yama-padding-s;
+  }
+}

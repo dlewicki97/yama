@@ -1,0 +1,107 @@
+@import "../helpers/yama-padding";
+
+section.services {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  @include yama-padding;
+  @import "../title-section/title-section";
+  .title-section {
+    display: flex;
+    flex-wrap: wrap;
+    .title {
+      @media (max-width: 400px) {
+        font-size: 11vw;
+      }
+    }
+    .titles-container,
+    .description {
+      width: 50%;
+
+      @media (min-width: 992px) {
+        padding-left: 5rem;
+      }
+      @media (max-width: 992px) {
+        width: 100%;
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 7rem;
+    .service {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #eeeeee;
+      margin-bottom: 1.5rem;
+      .column {
+        width: 50%;
+
+        @media (max-width: 992px) {
+          width: 100%;
+        }
+        &:last-child {
+          padding: 1rem 4rem;
+        }
+        @media (max-width: 400px) {
+          &:last-child {
+            padding-left: 1rem;
+            padding-right: 1rem;
+          }
+        }
+
+        .subtitle {
+          color: #343434;
+          font-weight: 100;
+          font-size: 1rem;
+          margin-bottom: 0.1rem;
+        }
+
+        .title {
+          margin-top: 0;
+          margin-bottom: 1.5rem;
+          font-weight: 100;
+          font-size: 2rem;
+          color: #343434;
+          @media (max-width: 400px) {
+            font-size: 10vw;
+          }
+        }
+
+        .description,
+        p {
+          line-height: 30px;
+          color: #343434;
+          font-weight: 100;
+        }
+
+        .button-container {
+          display: flex;
+          @import "../button/button";
+          a {
+            width: 100%;
+          }
+          .button {
+            font-size: 1.1rem;
+            padding: 0.9rem 3rem;
+            @media (max-width: 400px) {
+              width: 100% !important;
+            }
+          }
+        }
+
+        .photo {
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 100%;
+          height: 100%;
+          @media (max-width: 992px) {
+            height: 400px;
+          }
+        }
+      }
+    }
+  }
+}

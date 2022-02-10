@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="fonts/nissan-font/nissan-font.css" rel="stylesheet" />
+    <link href="min-css/w3schools-lightbox.min.css" rel="stylesheet" />
+    <link href="min-css/home-layout.min.css" rel="stylesheet" />
+    <link href="min-css/home.min.css" rel="stylesheet" />
+    <title>Strona główna - Yama</title>
+</head>
+
+<body>
+    <header>
+        <div class="nav-content">
+            <nav class="flex_box yama_padding">
+                <a href="/">
+                    <img class="nissan_logo lazy" data-src="icons/nissan-logo.svg">
+                </a>
+                <div class="nav_separator"></div>
+                <div class="logo_box">
+
+                    <img class="yama_logo lazy" data-src="icons/yama-logo-white.svg">
+                    <span class="hamburger smooth" onclick="toggle_nav()"><i class="line_middle"></i></span>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+    <div class="yama_menu yama_padding" id="sidemenu">
+        <div class="flex_box flex_r"><span class="cross" onclick="toggle_nav()"><img class="smooth lazy"
+                    data-src="icons/cross.svg"></span></div>
+        <div class="flex_box flex_r">
+            <div class="menu_logo lazy" data-bg="icons/menu_logo.svg"></div>
+            <div class="menu_box">
+                <a href="">
+                    <h1>Samochody nowe</h1>
+                </a>
+                <a href="">
+                    <h1>Dostępne od ręki</h1>
+                </a>
+                <a href="">
+                    <h1>Usługi</h1>
+                </a>
+                <a href="">
+                    <h1>O nas</h1>
+                </a>
+                <a href="">
+                    <h1>Aktualności</h1>
+                </a>
+                <a href="">
+                    <h1>Kontakt</h1>
+                </a>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section class="slider">
+            <div class="fader" id="slider-1">
+                <div class="Slides lazy" data-bg="img/osielsko/slide-1.jpg" photo-mobile="img/osielsko/lakier.jpg"
+                    photo-tablet="img/osielsko/lakier.jpg" photo="img/osielsko/slide-1.jpg">
+                    <div class="flex_box flex_align_e yama_padding carousel-content-container"
+                        style="height:inherit;max-height:inherit;">
+                        <div class="carousel-content">
+                            <h1>NISSAN - SMAKUJ PODRÓŻ</h1>
+                            <a href="#">DOWIEDZ SIĘ WIĘCEJ <i>
+                                    <img style="width:11px;" data-src="icons/arrow-white.svg" class="lazy">
+                                </i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="Slides lazy" data-bg="img/osielsko/slide-2.jpg" photo="img/osielsko/slide-2.jpg"
+                    photo-mobile="img/osielsko/slide-22.jpg" photo-tablet="img/osielsko/slide-23.jpg">
+                    <div class="flex_box flex_align_e yama_padding carousel-content-container"
+                        style="height:inherit;max-height:inherit;">
+                        <div class="carousel-content">
+                            <h1>NISSAN - SMAKUJ PODRÓŻ</h1>
+                            <a href="#">DOWIEDZ SIĘ WIĘCEJ <i><img style="width:11px;" data-src="icons/arrow-white.svg"
+                                        class="lazy"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="Slides lazy" data-bg="img/osielsko/main.jpg" photo="img/osielsko/main.jpg"
+                    photo-mobile="img/osielsko/main-12.jpg" photo-tablet="img/osielsko/main-13.jpg">
+                    <div class="flex_box flex_align_e yama_padding carousel-content-container"
+                        style="height:inherit;max-height:inherit;">
+                        <div class="carousel-content">
+                            <h1>NISSAN - SMAKUJ PODRÓŻ</h1>
+                            <a href="#">DOWIEDZ SIĘ WIĘCEJ <i><img style="width:11px;" data-src="icons/arrow-white.svg"
+                                        class="lazy"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dot_box yama_padding"></div>
+                <a class="prev">&#10094;</a>
+                <a class="next">&#10095;</a>
+            </div>
+        </section>
+        <section class="sep_top-xl new-cars">
+            <div class="block_normal yama_padding qa_fade title-container">
+                <h2>OFERTA NISSAN YAMA</h2>
+                <h1>Nowoczesność - tym się chcemy dzielić</h1>
+            </div>
+            <div class="carousel custom-carousel">
+                <div class="column">
+                    <div>
+                        <div class="photo lazy" title="" data-bg="img/home/offer-1.png"></div>
+                        <h4 class="mark">Nissan <span class="model">QASHQAI</span></h4>
+                    </div>
+
+                    <div>
+                        <div class="price">od 99 800 zł</div>
+                        <div class="button-container">
+                            <a href="#">
+                                <button class="button">SZCZEGÓŁY
+                                    <i>
+                                        <img data-src="icons/arrow-white.svg" class="lazy arrow">
+                                    </i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div>
+                        <div class="photo lazy" title="" data-bg="img/home/offer-3.png"></div>
+                        <h4 class="mark">Nissan <span class="model">LEAF</span></h4>
+                    </div>
+                    <div>
+                        <div class="price">od 78 930 zł</div>
+                        <div class="button-container">
+                            <a href="#">
+                                <button class="button">SZCZEGÓŁY
+                                    <i>
+                                        <img data-src="icons/arrow-white.svg" class="lazy arrow">
+                                    </i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div>
+                        <div class="photo lazy" title="" data-bg="img/home/offer-5.png"></div>
+                        <h4 class="mark">Nissan <span class="model">MICRA</span></h4>
+                    </div>
+                    <div>
+                        <div class="price">od 78 930 zł</div>
+                        <div class="button-container">
+                            <a href="#">
+                                <button class="button">SZCZEGÓŁY
+                                    <i>
+                                        <img data-src="icons/arrow-white.svg" class="lazy arrow">
+                                    </i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div>
+                        <div class="photo lazy" title="" data-bg="img/home/offer-2.png"></div>
+                        <h4 class="mark">Nissan <span class="model">NAVARA</span></h4>
+                    </div>
+                    <div>
+                        <div class="price">od 78 930 zł</div>
+                        <div class="button-container">
+                            <a href="#">
+                                <button class="button">SZCZEGÓŁY
+                                    <i>
+                                        <img data-src="icons/arrow-white.svg" class="lazy arrow">
+                                    </i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div>
+                        <div class="photo lazy" title="" data-bg="img/home/offer-4.png"></div>
+                        <h4 class="mark">Nissan <span class="model">e-NV200</span></h4>
+                    </div>
+                    <div>
+                        <div class="price">od 164 328 zł</div>
+                        <div class="button-container">
+                            <a href="#">
+                                <button class="button">SZCZEGÓŁY
+                                    <i>
+                                        <img data-src="icons/arrow-white.svg" class="lazy arrow">
+                                    </i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="sep_top-m" style="margin-top: 5rem;">
+            <div class="flex_box yama_padding" id="infoflex">
+                <div class="info_left qa_fade-left" style="margin-bottom: 4rem;">
+                    <img class="lazy" data-src="icons/menu_logo.svg"></img>
+                    <h1>Wartości naszej marki</h1>
+                </div>
+                <div class="info_right qa_fade-right">
+                    <h1>NASI KLIENCI</h1>
+                    <h2>Ich potrzeby, komfort, zaufanie - tworzymy miejsce gdzie wydarza się wszystko</h2>
+                    <h1>NISSAN</h1>
+                    <h2>Samochód, który z dumą i pasją sprzedajemy</h2>
+                    <h1>YAMA</h1>
+                    <h2>Marka dealerska, której logo to symbol naszych doświadczeń i wartości</h2>
+                </div>
+            </div>
+        </section>
+        <section class="sep_top-xl">
+            <div class="block_normal yama_padding qa_fade">
+                <h2>NAGRODY GRUPY YAMA</h2>
+                <h1>Dziękujemy za uznanie!</h1>
+            </div>
+            <div class="grid-3 gtab-2 gmob-1 timeline yama_padding">
+                <div class="timeline_box">
+                    <div>
+                        <year>2021</year>
+                        <h3>SALON OSIELSKO</h3>
+                        <subdiv>
+                            <img class="lazy" data-src="icons/trophy-star.svg"></img>
+                            <label>
+                                <h5>Laureat konkursu</h5>
+                                <h4>Orły Motoryzacji</h4>
+                            </label>
+                        </subdiv>
+                        <h3>SALON TORUŃ</h3>
+                        <subdiv>
+                            <img class="lazy" data-src="icons/trophy-star.svg"></img>
+                            <label>
+                                <h5>Laureat konkursu</h5>
+                                <h4>Orły Motoryzacji</h4>
+                            </label>
+                        </subdiv>
+                    </div>
+                </div>
+                <div class="timeline_box">
+                    <div>
+                        <year>2020</year>
+                        <h3>SALON OSIELSKO</h3>
+                        <subdiv>
+                            <img class="lazy" data-src="icons/trophy-star.svg"></img>
+                            <label>
+                                <h5>Laureat konkursu</h5>
+                                <h4>Orły Motoryzacji</h4>
+                            </label>
+                        </subdiv>
+                        <h3>SALON TORUŃ</h3>
+                        <subdiv>
+                            <img class="lazy" data-src="icons/trophy-star.svg"></img>
+                            <label>
+                                <h5>Laureat konkursu</h5>
+                                <h4>Orły Motoryzacji</h4>
+                            </label>
+                        </subdiv>
+                    </div>
+                </div>
+                <div class="timeline_box">
+                    <div>
+                        <year>2019</year>
+                        <h3>SALON OSIELSKO</h3>
+                        <subdiv>
+                            <img class="lazy" data-src="icons/trophy-one.svg"></img>
+                            <label>
+                                <h5>Nr 1 w Polsce</h5>
+                                <h4>Wielki Test Salonów</h4>
+                            </label>
+                        </subdiv>
+                        <subdiv>
+                            <img class="lazy" data-src="icons/trophy-star.svg"></img>
+                            <label>
+                                <h5>Laureat konkursu</h5>
+                                <h4>Orły Motoryzacji</h4>
+                            </label>
+                        </subdiv>
+                        <h3>SALON TORUŃ</h3>
+                        <subdiv>
+                            <img class="lazy" data-src="icons/trophy-star.svg"></img>
+                            <label>
+                                <h5>Laureat konkursu</h5>
+                                <h4>Orły Motoryzacji</h4>
+                            </label>
+                        </subdiv>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="sep_top-xl">
+            <div class="listing_flex odd">
+                <div class="listing_bc lazy" data-bg="img/home/history-1.png"></div>
+                <div class="listing_info">
+                    <h2>UWAŻNOŚĆ - MAMY TO W DNA</h2>
+                    <h1>Historia marki Yama</h1>
+                    <desc>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia sed ligula a lacinia.
+                        Aenean id
+                        neque volutpat, finibus risus non, facilisis nisl. Donec scelerisque libero quis sem varius
+                        vulputate.
+                        In bibendum dolor odio, sed ornare nunc suscipit in. Suspendisse tempor posuere justo sit amet
+                        luctus.
+                        Nunc sit amet erat efficitur leo mollis congue. Maecenas ultrices, ante sit amet pellentesque
+                        luctus,
+                        est velit tempus odio, a facilisis justo dolor a sem. Cras vel ante purus. Cras lectus dui,
+                        blandit nec
+                        volutpat eget, tempus tristique ipsum. Aenean euismod est id lacus sagittis luctus eget.</desc>
+                    <a href="#">
+                        <button class="button">O NAS
+                            <i>
+                                <img data-src="icons/arrow-white.svg" class="lazy arrow">
+                            </i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="listing_flex even">
+                <div class="listing_info">
+                    <h2>KOMPLEKSOWA POMOC - MAMY TO Z SERCA</h2>
+                    <h1>Autoryzowany Serwis Yama</h1>
+                    <desc>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia sed ligula a lacinia.
+                        Aenean id
+                        neque volutpat, finibus risus non, facilisis nisl. Donec scelerisque libero quis sem varius
+                        vulputate.
+                        In bibendum dolor odio, sed ornare nunc suscipit in. Suspendisse tempor posuere justo sit amet
+                        luctus.
+                        Nunc sit amet erat efficitur leo mollis congue. Maecenas ultrices, ante sit amet pellentesque
+                        luctus,
+                        est velit tempus odio, a facilisis justo dolor a sem. Cras vel ante purus. Cras lectus dui,
+                        blandit nec
+                        volutpat eget, tempus tristique ipsum. Aenean euismod est id lacus sagittis luctus eget.</desc>
+                    <a href="#">
+                        <button class="button">SERWIS
+                            <i>
+                                <img data-src="icons/arrow-white.svg" class="lazy arrow">
+                            </i>
+                        </button>
+                    </a>
+                </div>
+                <div class="listing_bc lazy" data-bg="img/home/history-2.png"></div>
+            </div>
+        </section>
+        <div class="yama_banner lazy" data-bg="img/osielsko/lakier.jpg">
+            <div class="shadow_long yama_padding">
+                <div class="content">
+                    <icon>
+                        <img class="lazy" data-src="icons/banner-1.svg">
+                        <p>Serwis mechaniczny</p>
+                    </icon>
+                    <icon>
+                        <img class="lazy" data-src="icons/banner-3.svg">
+                        <p>Serwis blacharsko-lakierniczy</p>
+                    </icon>
+                    <icon>
+                        <img class="lazy" data-src="icons/banner-2.svg">
+                        <p>Części i akcesoria</p>
+                    </icon>
+                </div>
+                <div class="filler"></div>
+            </div>
+        </div>
+        <section>
+            <div class="listing_flex odd">
+                <div class="listing_bc lazy" data-bg="img/saleswoman.jpg"></div>
+                <div class="listing_info">
+                    <h2>KROK PRZED ZDARZENIAMI - TAKIE MAMY PERSPEKTYWY</h2>
+                    <h1>Yama Ubezpieczenia</h1>
+                    <desc>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia sed ligula a lacinia.
+                        Aenean id
+                        neque volutpat, finibus risus non, facilisis nisl. Donec scelerisque libero quis sem varius
+                        vulputate.
+                        In bibendum dolor odio, sed ornare nunc suscipit in. Suspendisse tempor posuere justo sit amet
+                        luctus.
+                        Nunc sit amet erat efficitur leo mollis congue. Maecenas ultrices, ante sit amet pellentesque
+                        luctus,
+                        est velit tempus odio, a facilisis justo dolor a sem. Cras vel ante purus. Cras lectus dui,
+                        blandit nec
+                        volutpat eget, tempus tristique ipsum. Aenean euismod est id lacus sagittis luctus eget.</desc>
+                    <a href="#">
+                        <button class="button">Ubezpieczenia
+                            <i>
+                                <img data-src="icons/arrow-white.svg" class="lazy arrow">
+                            </i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="listing_flex even">
+                <div class="listing_info">
+                    <h2>ELASTYCZNE MYŚLENIE - TAKĄ MAMY GŁOWĘ</h2>
+                    <h1>Yama Finansowanie</h1>
+                    <desc>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia sed ligula a lacinia.
+                        Aenean id
+                        neque volutpat, finibus risus non, facilisis nisl. Donec scelerisque libero quis sem varius
+                        vulputate.
+                        In bibendum dolor odio, sed ornare nunc suscipit in. Suspendisse tempor posuere justo sit amet
+                        luctus.
+                        Nunc sit amet erat efficitur leo mollis congue. Maecenas ultrices, ante sit amet pellentesque
+                        luctus,
+                        est velit tempus odio, a facilisis justo dolor a sem. Cras vel ante purus. Cras lectus dui,
+                        blandit nec
+                        volutpat eget, tempus tristique ipsum. Aenean euismod est id lacus sagittis luctus eget.</desc>
+                    <a href="#">
+                        <button class="button">FINANSOWANIE
+                            <i>
+                                <img data-src="icons/arrow-white.svg" class="lazy arrow">
+                            </i>
+                        </button>
+                    </a>
+                </div>
+                <div class="listing_bc lazy" data-bg="img/car_woman.jpg"></div>
+            </div>
+        </section>
+        <div class="yama_banner full lazy"
+            style="background-size: cover !important; background-position: right !important"
+            data-bg="img/home/range2.png">
+            <div class="shadow_short yama_padding banner-shadow">
+                <div class="filler" style="display:flex;align-items:center;">
+                    <div style="width:max-content;height:min-content;line-height: 20px;">
+                        <h1 style="margin-bottom: -8px;">Nissany</h1>
+                        <h2 style="text-transform: lowercase;">dostępne na już!</h2>
+                    </div>
+                </div>
+                <div class="content-2">
+                    <a href="#">
+                        <button class="button">Dostępne pojazdy
+                            <img data-src="icons/arrow-white.svg" class="lazy arrow">
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <section>
+            <div class="listing_flex odd">
+                <div class="listing_bc lazy" data-bg="img/Toruń/display.jpg"></div>
+                <div class="listing_info">
+                    <h2>ZAWSZE TAM, GDZIE ZMIANY - TO NAZYWAMY WSZECHSTRONNOŚCIĄ</h2>
+                    <h1>Samochody używane Yama</h1>
+                    <desc>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia sed ligula a lacinia.
+                        Aenean id
+                        neque volutpat, finibus risus non, facilisis nisl. Donec scelerisque libero quis sem varius
+                        vulputate.
+                        In bibendum dolor odio, sed ornare nunc suscipit in. Suspendisse tempor posuere justo sit amet
+                        luctus.
+                        Nunc sit amet erat efficitur leo mollis congue. Maecenas ultrices, ante sit amet pellentesque
+                        luctus,
+                        est velit tempus odio, a facilisis justo dolor a sem. Cras vel ante purus. Cras lectus dui,
+                        blandit nec
+                        volutpat eget, tempus tristique ipsum. Aenean euismod est id lacus sagittis luctus eget.</desc>
+                    <a href="#">
+                        <button class="button">sprawdź ofertę
+                            <i>
+                                <img data-src="icons/arrow-white.svg" class="lazy arrow">
+                            </i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="listing_flex even">
+                <div class="listing_info">
+                    <h2>PISZEMY O NISSANIE - MAMY TAKĄ PASJĘ</h2>
+                    <h1>Aktualności</h1>
+                    <desc>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia sed ligula a lacinia.
+                        Aenean id
+                        neque volutpat, finibus risus non, facilisis nisl. Donec scelerisque libero quis sem varius
+                        vulputate.
+                        In bibendum dolor odio, sed ornare nunc suscipit in. Suspendisse tempor posuere justo sit amet
+                        luctus.
+                        Nunc sit amet erat efficitur leo mollis congue. Maecenas ultrices, ante sit amet pellentesque
+                        luctus,
+                        est velit tempus odio, a facilisis justo dolor a sem. Cras vel ante purus. Cras lectus dui,
+                        blandit nec
+                        volutpat eget, tempus tristique ipsum. Aenean euismod est id lacus sagittis luctus eget.</desc>
+                    <a href="#">
+                        <button class="button">aktualności
+                            <i>
+                                <img data-src="icons/arrow-white.svg" class="lazy arrow">
+                            </i>
+                        </button>
+                    </a>
+                </div>
+                <div data-lightbox title="Aktualności" style="position: relative;" class="listing_bc lazy"
+                    data-bg="img/Toruń/slide-3.jpg"></div>
+
+            </div>
+        </section>
+        <section class="sep_top-xl">
+            <div class="block_normal yama_padding align_c sep_bot-l qa_fade">
+                <h2>ZBUDOWALIŚMY WYJĄTKOWE MIEJSCE, GDZIE SPRZEDAJEMY SAMOCHODY. TAKĄ MAMY MISJĘ.</h2>
+                <h1>Salony Nissan Yama</h1>
+            </div>
+            <div class="grid-3 yama_padding">
+                <div class="block_normal tab_size-3">
+                    <div class="block_normal bcard">
+                        <label>Nissan Yama Bydgoszcz</label>
+                        <p>ul. Szosa Gdańska 28, 86-031 Osielsko</p>
+                        <span class="card_btn"><img class="lazy" data-src="icons/car-icon.svg">
+                            <p>WSKAZÓWKI DOJAZDU</p>
+                        </span>
+                    </div>
+                    <div class="block_normal bcard">
+                        <line>
+                            <label>T:</label>
+                            <p style="padding-left:1rem;"><a href="">+48 52 360 53 10</a></p>
+                        </line>
+                        <line>
+                            <label>E:</label>
+                            <p style="padding-left:1rem;">biuro@yama.pl</p>
+                        </line>
+                    </div>
+                    <div class="block_normal bcard">
+                        <div class="red_label">GODZINY OTWARCIA</div>
+                        <div class="hours">
+                            <div class="flex_box">
+                                <label style="width:123px">PN-PT:</label>
+                                <p>9:00 - 20:00</p>
+                            </div>
+                            <div class="flex_box">
+                                <label style="width:123px">Sobota:</label>
+                                <p>9:00 - 16:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="yama_spacer"></div>
+                    <div class="block_normal bcard">
+                        <label>Nissan Yama Toruń</label>
+                        <p>ul. Sieradzka 14, 87-100 Toruń</p>
+                        <span class="card_btn"><img class="lazy" data-src="icons/car-icon.svg">
+                            <p>WSKAZÓWKI DOJAZDU</p>
+                        </span>
+                    </div>
+                    <div class="block_normal bcard">
+                        <line>
+                            <label>T:</label>
+                            <p style="padding-left:1rem;"><a href="">+48 56 650 67 10</a></p>
+                        </line>
+                        <line>
+                            <label>E:</label>
+                            <p style="padding-left:1rem;">biuro@yama.pl</p>
+                        </line>
+                    </div>
+                    <div class="block_normal bcard">
+                        <div class="red_label">GODZINY OTWARCIA</div>
+                        <div class="hours">
+                            <div class="flex_box">
+                                <label style="width:123px">PN-PT:</label>
+                                <p>8:00 - 18:00</p>
+                            </div>
+                            <div class="flex_box">
+                                <label style="width:123px">Sobota:</label>
+                                <p>8:00 - 14:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex_box size-2 tab_size-3 yama_padding">
+                    <div class="map_img lazy" data-bg="img/home/map.png"></div>
+                </div>
+            </div>
+        </section>
+        <div class="links">
+            <div class="link-container">
+                <a class="link" href="#">
+                    <div class="photo lazy" data-bg="img/single-news/link-1.png">
+                        <div class="mask"></div>
+                        <div class="text">Zapytaj o nowe auto</div>
+                    </div>
+                </a>
+            </div>
+            <div class="link-container">
+                <a class="link" href="#">
+                    <div class="photo lazy" data-bg="img/single-news/link-2.png">
+                        <div class="mask"></div>
+                        <div class="text">Umów się do serwisu</div>
+                    </div>
+                </a>
+            </div>
+            <div class="link-container">
+                <a class="link" href="#">
+                    <div class="photo lazy" data-bg="img/single-news/link-3.png">
+                        <div class="mask"></div>
+                        <div class="text">Zamów rozmowę z doradcą</div>
+                    </div>
+                </a>
+            </div>
+            <div class="link-container">
+                <a class="link" href="#">
+                    <div class="photo lazy" data-bg="img/single-news/link-4.png">
+                        <div class="mask"></div>
+                        <div class="text">Umów się na jazdę próbną</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-blocks yama_padding">
+            <div class="block_normal">
+                <img class="footer_nissan lazy" data-src="icons/nissan-logo.svg">
+                <img class="footer_yama lazy" data-src="icons/yama-logo.svg">
+            </div>
+            <div class="block_normal">
+                <h1>oferta</h1>
+                <a href="link">Samochody nowe</a>
+                <a href="link">Dostępne od ręki</a>
+                <a href="link">Serwis mechaniczny</a>
+                <a href="link">Serwis blacharsko-lakierniczy</a>
+                <a href="link">Finansowanie</a>
+                <a href="link">Ubezpieczenia</a>
+            </div>
+            <div class="block_normal" id="models-col">
+                <h1>modele</h1>
+                <a href="link">Micra</a>
+                <a href="link">Juke</a>
+                <a href="link">Nowy Qashqai</a>
+                <a href="link">X-Trail</a>
+                <a href="link">Navara</a>
+                <a href="link">Leaf</a>
+                <a href="link">E-NV200</a>
+                <a href="link">GT-R</a>
+            </div>
+            <div class="block_normal">
+                <h1>Nissan Yama</h1>
+                <a href="link">O nas</a>
+                <a href="link">Salony</a>
+                <a href="link">Aktualności</a>
+                <a href="link">Kontakt</a>
+                <a href="link">Numer konta</a>
+                <a href="link">Polityka RODO</a>
+                <a href="link">Pliki Cookies</a>
+            </div>
+            <div class="block_normal">
+                <h1>Social Media</h1>
+                <a href="link">Facebook</a>
+                <a href="link">Instagram</a>
+                <a href="link">LinkedIn</a>
+            </div>
+        </div>
+        <div class="copyright yama_padding">
+            <div>Copyright © Grupa Yama 2021. Wszystkie prawa zastrzeżone.</div>
+            <div id="toright">Created with love by<a href="#">AdAwards</a></div>
+        </div>
+    </footer>
+
+    <div id="w3schoolsModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <div class="slide">
+                <img src="" style="width:100%">
+            </div>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/w3schools-lightbox/w3schools-lightbox.js"></script>
+    <script type="text/javascript" src="js/qanim.js"></script>
+    <script type="text/javascript" src="js/quavosh-slider.js"></script>
+    <script type="text/javascript" src="js/carousel/carousel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.5.0/dist/lazyload.min.js"></script>
+    <script>
+
+        function setSlidesImageSrc(event) {
+            let slides = document.querySelectorAll('section.slider .Slides');
+            slides.forEach(slide => {
+                let newSrc = slide.getAttribute('photo');
+                if (window.innerWidth < 576) newSrc = slide.getAttribute('photo-mobile');
+                else if (window.innerWidth < 992) newSrc = slide.getAttribute('photo-tablet');
+                console.log(event.constructor === Boolean);
+
+                (event.constructor === Boolean ? slide.dataset.bg = newSrc : slide.style.backgroundImage = `url(${newSrc})`);
+            })
+        }
+        setSlidesImageSrc(true);
+        window.addEventListener('resize', setSlidesImageSrc);
+    </script>
+    <script>
+        var navbar_on = false;
+        var lazyLoadInstance = new LazyLoad();
+
+        window.onload = function () {
+            qanim();
+            quavosh_slider(1);
+        };
+
+        function reset_bar() {
+            document.getElementById('sidemenu').style.left = 100 + "%";
+            navbar_on = false;
+        }
+        window.onresize = reset_bar;
+
+        function toggle_nav() {
+            var element = document.getElementById('sidemenu');
+            if (navbar_on == false) {
+                navbar_on = true;
+                element.style.left = 0 + "%";
+
+            } else {
+                navbar_on = false;
+                element.style.left = 100 + "%";
+            }
+        }
+    </script>
+</body>
+
+</html>

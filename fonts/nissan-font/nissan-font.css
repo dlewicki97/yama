@@ -1,0 +1,21 @@
+@font-face {
+  font-family: NissanFont;
+  src: url(NissanBrandW06-Light.ttf);
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+}
+@font-face {
+  font-family: NissanFont;
+  src: url(NissanBrandW06-Regular.ttf);
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: NissanFont;
+  src: url(NissanBrandW06-Bold.ttf);
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}

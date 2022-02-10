@@ -1,0 +1,21 @@
+@import "../helpers/yama-padding";
+
+section.contact {
+  @import "saloons-header";
+  @import "saloon";
+  @import "contact-form";
+  @import "../button/button";
+  @import "../title-section/title-section";
+  .content {
+    @include yama-padding;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .title-section {
+    @include yama-padding;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+  }
+}

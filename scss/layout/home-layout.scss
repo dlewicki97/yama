@@ -1,0 +1,29 @@
+@import "home-header";
+@import "footer";
+*::selection {
+  background-color: var(--first);
+  color: white;
+}
+:root {
+  --first: #c4012f;
+}
+body {
+  font-family: NissanFont !important;
+}
+a {
+  text-decoration: none !important;
+  transition: 0.2s color;
+}
+
+::-webkit-scrollbar-track {
+  background-color: lightgray;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--first);
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}

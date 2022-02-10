@@ -1,0 +1,72 @@
+header {
+  nav {
+    position: absolute !important;
+    z-index: 100;
+    min-height: 200px;
+
+    padding-top: 65px;
+    @media (max-width: 992px) {
+      position: static !important;
+      background-color: #343434;
+    }
+
+    @media (max-width: 768px) {
+      //   position: fixed !important;
+      width: 100% !important;
+      top: 0;
+      left: 0 !important;
+      height: unset !important;
+      //   background-color: unset;
+    }
+    .nav-content {
+      position: relative;
+    }
+    .logo_box {
+      display: flex;
+      align-items: center;
+      width: 15%;
+      height: max-content;
+      @media (max-width: 1620px) {
+        flex-direction: column;
+      }
+      @media (max-width: 768px) {
+        width: 35%;
+      }
+
+      .yama_logo {
+        width: 150px;
+        height: 28px;
+        @media (max-width: 400px) {
+          padding-right: 0 !important;
+          width: 100%;
+        }
+      }
+      
+      .hamburger {
+        display: flex;
+        align-items: center;
+        width: 39px;
+        height: 27px;
+        border-top: 3px solid white;
+        border-bottom: 3px solid white;
+        margin-left: 22%;
+        cursor: pointer;
+        @media (max-width: 1620px) {
+          margin-top: 24px;
+        }
+        .line_middle {
+          width: 100%;
+          height: 3px;
+          border-top: 3px solid white;
+        }
+      }
+      .smooth {
+        transition: 0.3s;
+      }
+    }
+
+    .nissan_logo {
+      max-width: 100%;
+    }
+  }
+}

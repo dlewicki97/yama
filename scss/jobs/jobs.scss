@@ -1,0 +1,132 @@
+@import "../helpers/yama-padding";
+@import "job-modal";
+
+section.jobs {
+  @include yama-padding;
+  .jobs-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 12rem;
+    .job {
+      width: 33.33%;
+      display: flex;
+      align-items: stretch;
+      position: relative;
+      margin-bottom: 14rem;
+      @media (min-width: 992px) {
+        padding-right: 1rem;
+        &:nth-child(3n) {
+          padding-right: 0;
+        }
+      }
+      @media (max-width: 992px) {
+        width: 100%;
+      }
+
+      .icon-container {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -80%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        width: 130px;
+        height: 130px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16);
+        z-index: 1;
+        .icon {
+          height: 70px;
+        }
+      }
+
+      .cart {
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.16);
+        padding: 4rem 3rem;
+        @media (min-width: 992px) and (max-width: 1200px) {
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+        @media (max-width: 320px) {
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+        & > .title {
+          font-weight: 900;
+          color: #343434;
+          font-size: 2rem;
+          margin-bottom: 2rem;
+          margin-top: 0;
+        }
+
+        .description,
+        p {
+          line-height: 30px;
+          font-weight: 100;
+          color: #343434;
+          margin-top: 0;
+        }
+        @import "../button/button";
+        .button {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+
+  .empty-jobs {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h1 {
+        font-size: 6.5rem;
+        font-weight: 900;
+        color: #343434;
+        margin-bottom: 1.5rem;
+        margin-top: 0;
+        @media (max-width: 992px) {
+          font-size: 4rem;
+          margin-bottom: 0.5rem;
+        }
+        @media (max-width: 576px) {
+          font-size: 10vw;
+          margin-bottom: 0.5rem;
+        }
+      }
+      .description,
+      p {
+        width: 60%;
+        font-size: 2rem;
+        color: #343434;
+        margin: auto;
+        @media (max-width: 992px) {
+          width: 100%;
+          font-size: 1rem;
+        }
+      }
+      .button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+        @media (max-width: 992px) {
+          margin-top: 1.5rem;
+        }
+        @import "../button/button";
+        .button {
+          @media (max-width: 992px) {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

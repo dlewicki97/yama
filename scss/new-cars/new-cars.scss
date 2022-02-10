@@ -1,0 +1,20 @@
+@import "carousel";
+@import "../news-links/news-links";
+@import "../button/button";
+@import "../title-section/title-section";
+
+section.new-cars {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  @include news-links;
+
+  .title-section {
+    margin-bottom: 3rem;
+  }
+
+  .links {
+    margin-top: 8rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

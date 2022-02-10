@@ -1,0 +1,113 @@
+@import "../helpers/yama-padding";
+@import "../news-links/news-links";
+
+section.single-news {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  @import "../title-section/title-section";
+
+  .title-section {
+    @include yama-padding;
+  }
+
+  .photo {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    @media (max-width: 992px) {
+      height: 400px;
+    }
+  }
+
+  .intro-content {
+    display: flex;
+    flex-wrap: wrap;
+    @include yama-padding-left;
+    @media (max-width: 992px) {
+      @include yama-padding;
+    }
+    .description {
+      padding-right: 3rem;
+      @media (max-width: 992px) {
+        padding-right: 0;
+        margin-bottom: 1rem;
+      }
+    }
+    .photo-container {
+      @media (max-width: 992px) {
+        order: 0;
+      }
+    }
+    .description,
+    .photo-container {
+      width: 50%;
+      @media (max-width: 992px) {
+        width: 100%;
+      }
+    }
+  }
+  h1 {
+    margin-bottom: 3rem !important;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .description-container {
+    margin-top: 5rem;
+    @include yama-padding;
+
+    p {
+      margin-bottom: 5rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .description {
+    font-weight: 300;
+    line-height: 30px;
+    color: #343434;
+    font-size: 1rem;
+    h1 {
+      @include title-section-title;
+      line-height: 42px;
+    }
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+    @include yama-padding;
+    .photo-container {
+      width: 25%;
+      margin-bottom: 1rem;
+      .photo {
+        height: 400px;
+      }
+      @media (min-width: 992px) {
+        padding-right: 1rem;
+        &:nth-child(4n) {
+          padding-right: 0;
+        }
+      }
+      @media (max-width: 992px) {
+        width: 100%;
+      }
+    }
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+    @import "../button/button";
+  }
+
+  @include news-links;
+}

@@ -1,0 +1,19 @@
+.qa_fade {
+  opacity: 0;
+}
+.qa_fade-right {
+  position: relative;
+  opacity: 0;
+}
+.qa_fade-left {
+  position: relative;
+  opacity: 0;
+}
+.qa_fade-up {
+  position: relative;
+  opacity: 0;
+}
+.qa_fade-down {
+  position: relative;
+  opacity: 0;
+}

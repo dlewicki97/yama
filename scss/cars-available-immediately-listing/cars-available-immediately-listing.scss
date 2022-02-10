@@ -1,0 +1,248 @@
+@import "../helpers/yama-padding";
+@import "../news-links/news-links";
+
+section.cars-available-immediately-listing {
+  @import "../title-section/title-section";
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+
+  .title-section {
+    @include yama-padding-s;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+    .subtitle {
+      color: var(--first);
+      font-weight: 700;
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+    }
+    .title {
+      font-weight: 100;
+    }
+  }
+
+  .model-select-container {
+    @import "../custom-select/custom-select";
+    text-align: right;
+    width: 50%;
+    @media (max-width: 992px) {
+      text-align: left;
+      width: 100%;
+    }
+    .cars {
+      font-weight: 100;
+      font-size: 1.1rem;
+      line-height: 20px;
+      @media (min-width: 992px) {
+        margin-bottom: 1rem;
+      }
+      @media (max-width: 992px) {
+        margin-top: 2rem;
+      }
+      span {
+        color: var(--first);
+        font-weight: 700;
+      }
+    }
+    .select-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      @media (max-width: 992px) {
+        flex-direction: column;
+        align-items: flex-start;
+        label {
+          margin-bottom: 0.4rem;
+        }
+      }
+      label {
+        font-size: 2rem;
+        font-weight: 100;
+        padding-right: 0.5rem;
+      }
+    }
+    .model-select {
+      .arrow {
+        left: 0.7rem;
+        top: 20%;
+        transform: unset;
+        width: 17px;
+        height: 17px;
+      }
+      .select-selected {
+        padding: 0rem 3rem;
+        border: unset !important;
+        background-color: #eeeeee;
+        color: #343434;
+        letter-spacing: 1px;
+        span {
+          left: 0 !important;
+        }
+      }
+
+      .select-items {
+        border: unset;
+        div {
+          background-color: #eeeeee;
+          color: #343434;
+          border-color: #34343426;
+        }
+      }
+    }
+  }
+
+  .car-rows {
+    .car-row {
+      display: flex;
+      flex-wrap: wrap;
+      @include yama-padding-s;
+
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+      &:nth-child(2n + 1) {
+        background-color: #eeeeee;
+      }
+
+      .photo-column {
+        width: 25%;
+        @media (max-width: 1400px) {
+          width: 100%;
+          order: 1;
+        }
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      .parameters {
+        text-transform: uppercase;
+        width: 50%;
+        @media (min-width: 1400px) {
+          padding-left: 1rem;
+        }
+        @media (max-width: 1400px) {
+          width: 100%;
+          order: 3;
+          margin-top: 3rem;
+        }
+        .parameter {
+          display: flex;
+          margin-bottom: 0.7rem;
+          flex-wrap: wrap;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          b,
+          span {
+            font-size: 1.7rem;
+            width: 50%;
+            color: #343434;
+
+            @media (max-width: 450px) {
+              width: 100%;
+              display: flex;
+              align-items: center;
+            }
+          }
+          b {
+            text-align: right;
+            font-weight: 700;
+            padding-right: 3rem;
+            line-height: 30px;
+            @media (max-width: 1400px) {
+              text-align: left;
+            }
+          }
+          span {
+            font-weight: 100;
+          }
+        }
+      }
+      .title-container {
+        width: 25%;
+        text-align: right;
+        @media (max-width: 1400px) {
+          width: 100%;
+          text-align: left;
+          order: 2;
+        }
+        .mark {
+          font-size: 3rem;
+          font-weight: 100;
+          color: #343434;
+          margin-top: 0;
+          margin-bottom: 0;
+          .model {
+            font-weight: 900;
+          }
+        }
+
+        .prices {
+          line-height: 42px;
+          margin-bottom: 0.4rem;
+
+          .discounted-price,
+          .price {
+            color: var(--first);
+            small {
+              display: block;
+              font-size: 1.05rem;
+              color: #343434;
+            }
+          }
+          .discounted-price {
+            text-decoration: line-through;
+            font-size: 2rem;
+            font-weight: 100;
+          }
+          .price {
+            font-weight: 900;
+            font-size: 2.7rem;
+          }
+        }
+        .monthly-installment {
+          color: #343434;
+          font-weight: 100;
+          font-size: 1.05rem;
+          b {
+            font-weight: 500;
+            padding-left: 0.5rem;
+            color: #5c5b5bf5;
+          }
+        }
+      }
+
+      .button-container {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 2rem;
+        @import "../button/button";
+        &.mobile {
+          order: 4;
+          @media (min-width: 1400px) {
+            display: none;
+          }
+        }
+        &.desktop {
+          @media (max-width: 1400px) {
+            display: none;
+          }
+        }
+        .button {
+          padding: 1rem 4rem;
+          font-size: 1.1rem;
+        }
+
+        @media (max-width: 1400px) {
+          justify-content: flex-start;
+        }
+
+        @media (max-width: 992px) {
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+
+  @include news-links;
+}

@@ -1,0 +1,43 @@
+.contact-title-content {
+  .title-column,
+  .description {
+    width: 50%;
+    margin-bottom: 1rem;
+    @media (max-width: 1200px) {
+      width: 100%;
+    }
+  }
+
+  .title-column {
+    .subtitle,
+    .title {
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+    .subtitle {
+      color: #202121;
+      letter-spacing: 3px;
+      font-weight: 300;
+      font-size: 0.9rem;
+      line-height: 20px;
+    }
+    .title {
+      font-weight: 400;
+      color: #343434;
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+    .yama-logo {
+      height: 90px;
+      @media (max-width: 576px) {
+        height: auto;
+        width: 100%;
+      }
+    }
+  }
+  .description {
+    color: #343434;
+    line-height: 30px;
+    font-weight: 100;
+  }
+}

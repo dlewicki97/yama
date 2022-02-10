@@ -1,0 +1,134 @@
+@import "../button/button";
+@import "../helpers/yama-padding";
+
+section.new-cars {
+  .title-container {
+    margin-bottom: 3rem;
+  }
+  @include yama-padding;
+  .carousel {
+    display: -webkit-inline-box;
+    width: 100%;
+    overflow-x: auto;
+    cursor: grab;
+    height: unset !important;
+    &::-webkit-scrollbar {
+      height: 0px;
+    }
+    .column {
+      width: fit-content;
+      text-align: center;
+      margin-bottom: 3rem;
+      width: 400px;
+      margin-right: 1rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 1rem;
+
+      &:first-child {
+        margin-left: 1rem;
+        @media (max-width: 1380px) {
+          margin-left: -2rem;
+        }
+      }
+
+      .button-container {
+        display: flex;
+        justify-content: center;
+      }
+      .mark,
+      .model {
+        font-size: 3rem;
+      }
+      .mark,
+      .model,
+      .price {
+        @media (max-width: 400px) {
+          font-size: 11vw !important;
+        }
+      }
+      .mark {
+        font-weight: 100;
+      }
+      .model {
+        font-weight: 500;
+      }
+      .price {
+        color: var(--first);
+        font-size: 3rem;
+        margin-bottom: 2rem;
+      }
+      .photo {
+        background-size: 89%;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 400px;
+      }
+    }
+  }
+
+  .container {
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 100%;
+      .column {
+        width: 33.3333%;
+        text-align: center;
+        padding: 1rem;
+        margin: 0 auto 2rem auto;
+        @media (max-width: 1380px) {
+          width: 50%;
+        }
+        @media (max-width: 900px) {
+          width: 100%;
+        }
+        .button-container {
+          display: flex;
+          justify-content: center;
+        }
+        .mark,
+        .model {
+          font-size: 3rem;
+        }
+        .mark,
+        .model,
+        .price {
+          @media (max-width: 400px) {
+            font-size: 11vw !important;
+          }
+        }
+        .mark {
+          font-weight: 100;
+          margin: 1rem 0;
+        }
+        .model {
+          font-weight: 500;
+        }
+        .price {
+          color: var(--first);
+          font-size: 3rem;
+          margin-bottom: 2rem;
+        }
+        .photo {
+          background-size: 89%;
+          background-position: center;
+          background-repeat: no-repeat;
+          height: 300px;
+          @media (max-width: 800px) {
+            height: 280px;
+          }
+          @media (max-width: 400px) {
+            height: 170px;
+          }
+        }
+      }
+    }
+  }
+
+
+
+}

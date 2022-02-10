@@ -1,0 +1,36 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--first);
+  text-decoration: none;
+  color: white;
+  padding: 0.7rem 4rem;
+  font-weight: 200;
+  font-size: 22px;
+  border: 1px solid var(--first);
+  outline: unset !important;
+  position: relative;
+  white-space: nowrap;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: NissanFont !important;
+  @media (max-width: 576px) {
+    width: 100%;
+  }
+  &:hover {
+    img.arrow {
+      right: 1.5rem;
+    }
+  }
+  img.arrow {
+    position: absolute;
+    transition: 0.2s right;
+    top: 50%;
+    right: 2rem;
+    transform: translateY(-50%);
+    @media (max-width: 320px) {
+      display: none;
+    }
+  }
+}

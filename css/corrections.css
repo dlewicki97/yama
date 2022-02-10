@@ -1,0 +1,96 @@
+nav {
+    right: 0;
+    z-index: 109 !important;
+}
+.logo_box {
+    width: 40% !important;
+}
+.yama_padding {
+    padding-right: 50px !important;
+}
+.logo_box_bg {
+    background: rgba(0,0,0,.6);
+    padding-top: 0 !important;
+    min-height: auto;
+}
+header nav .logo_box .yama_logo{
+    width: 250px;
+    height: 150px;
+}
+footer .footer_yama {
+    width: 250px;
+    height: 60px;
+}
+.click-dropdown-menu {
+    color: #fff;
+}
+.active-dropdown-menu {
+    height: auto !important;
+    transition: 1s all;
+}
+.dropdown-menu {
+    height: 0;
+    overflow: hidden;
+    list-style-type: none;
+}
+.dropdown-menu li {
+    
+}
+.dropdown-menu li a {
+    color: #fff;
+    font-size: 2rem;
+    opacity: .8;
+    transition: 1s all;
+}
+.dropdown-menu li a:hover {
+    opacity: 1;
+}
+.dot_box {
+    justify-content: center;
+}
+#popup {
+    display:flex; 
+    flex-direction:column;
+    position: fixed;
+    z-index: 99999;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+    background: #fff;
+    border: 1px solid #eee;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+}
+#popup button {
+    background-color:rgba(135, 136, 135,0.7);
+    border-radius:50%; 
+    width:32px; 
+    height: 32px;
+    align-self:flex-end; 
+    margin:8px; 
+    border:none; 
+    box-shadow:none;
+    padding:4px 8px; 
+    color: #f4f5f6;
+    font-size: 1rem;
+}
+#popup .content {
+    padding: 20px 50px;
+}
+#popup .content img  {
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+}
+#popup .content h1 {
+    margin-top: 20px;
+    font-size: 3.5rem;
+}
+#popup .content div {
+font-size: 2rem;
+}
+.monthly-installment {
+    font-size: 1.5rem !important;
+}
+.infoFilterAlert {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 20px 0;
+}

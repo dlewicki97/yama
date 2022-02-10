@@ -1,0 +1,96 @@
+footer {
+  background-color: #343434;
+  padding-top: 100px;
+
+  img {
+    margin-bottom: 31px;
+    margin-right: 50px;
+  }
+  .footer_nissan {
+    max-width: 100%;
+  }
+  .footer_yama {
+    width: 157px;
+    height: 30px;
+  }
+
+  h1 {
+    font-weight: 400;
+    font-size: 21px;
+    text-transform: uppercase;
+    color: white;
+    opacity: 0.9;
+    width: 100%;
+    margin: 0px 0px 16px 0px;
+  }
+  a {
+    display: block;
+    font-weight: 200;
+    font-size: 21px;
+    text-decoration: none;
+    color: white;
+    opacity: 0.6;
+    width: fit-content;
+    transition: 0.3s;
+    &:hover {
+      text-decoration: none;
+      color: #c4012f;
+      opacity: 0.8;
+    }
+  }
+  .block_normal {
+    padding-right: 16px;
+  }
+
+  .copyright {
+    margin-top: 100px;
+    border-top: 1px solid #eeeeee;
+    display: flex;
+    min-height: 136px;
+    align-items: center;
+    flex-wrap: wrap;
+    @media (max-width: 992px) {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+    div {
+      display: flex;
+      align-items: center;
+      width: 50%;
+      font-weight: 200;
+      font-size: 21px;
+      color: white;
+      opacity: 0.75;
+      @media (max-width: 992px) {
+        width: 100%;
+        margin-bottom: 1rem;
+        justify-content: flex-start !important;
+      }
+    }
+    a {
+      font-weight: 400;
+      padding-left: 8px;
+      opacity: 0.9;
+      text-decoration: none;
+      display: inline;
+      width: unset;
+    }
+  }
+  #toright {
+    justify-content: flex-end;
+  }
+  .footer-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    .block_normal {
+      width: 20%;
+      margin-bottom: 1rem;
+      @media (max-width: 1120px) {
+        width: 30%;
+      }
+      @media (max-width: 992px) {
+        width: 100%;
+      }
+    }
+  }
+}

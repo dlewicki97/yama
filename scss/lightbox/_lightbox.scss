@@ -1,0 +1,10 @@
+.lightboxOverlay {
+    position: fixed !important;
+    height: 100vh !important;
+}
+  
+.lightbox {
+    position: fixed !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+}

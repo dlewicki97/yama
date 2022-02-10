@@ -1,0 +1,59 @@
+@mixin title-section-title {
+  font-weight: 400;
+  color: #343434;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  margin-bottom: 0;
+  @media (max-width: 992px) {
+    font-size: 2rem;
+  }
+}
+.title-section {
+  line-height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  .titles-container,
+  .description {
+    width: 50%;
+    margin-bottom: 1rem;
+    @media (max-width: 992px) {
+      width: 100%;
+    }
+  }
+
+  :is(.subtitle, .title) {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  img {
+    height: 90px;
+    max-width: 100%;
+    margin-top: 2rem;
+    @media (max-width: 992px) {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .subtitle {
+    color: #202121;
+    letter-spacing: 3px;
+    font-weight: 300;
+    font-size: 0.9rem;
+    line-height: 20px;
+    margin-bottom: 0.5rem;
+  }
+
+  .title {
+    @include title-section-title;
+  }
+
+  .description {
+    line-height: 30px;
+    color: #343434;
+    font-weight: 100;
+    padding-left: 5rem;
+    @media (max-width: 992px) {
+      padding-left: 0;
+    }
+  }
+}
